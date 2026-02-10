@@ -20,30 +20,36 @@
 <body>
     <header id="header">
         <div class="head-cls">
-            <a href="index.html">
+            <a href="index.html" class="head-logo">
                 <img src="./assets/Stackly-logo-Blue.webp" alt="LOGO" loading="lazy" class="logo">
             </a>
-            <div class="menu-items">
-                <a href="index.html" class="menu-active"> <i class="fa-solid fa-circle"></i> Home</a>
+            <div class="menu-items" id="navMenu">
+                <a href="index.html" class="menu-active">Home</a>
                 <a href="404page.html">About</a>
                 <a href="404page.html">Service</a>
                 <a href="404page.html">Blog</a>
                 <a href="404page.html">Contact</a>
+                <div class="close-btn material-icons" id="closeMenu">close</div>
             </div>
             <div class="menu-btns">
                 <a href="404page.html" class="btn-transperent">Sign In</a>
                 <a href="404page.html" class="btn-primary">Start for Free</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="material-icons">menu</span>
             </div>
         </div>
     </header>
     <div class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>The Secure Banking Solution for <span class="highlight">Digital World</span></h1>
+                <h1 data-aos="fade" data-aos-delay="200">The Secure Banking Solution for <span class="highlight">Digital
+                        World</span></h1>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, quam nostrum. Lorem ipsum, dolor sit
+                <p data-aos="fade" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
+                    quam nostrum. Lorem ipsum, dolor sit
                     amet consectetur adipisicing elit. Nobis, placeat. Ex sit deleniti et asperiores. </p>
-                <div class="hero-btns">
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
                     <a href="404page.html" class="btn-dark">
                         <i class="fa-brands fa-apple"></i>
                         <div class="btn-text">
@@ -60,7 +66,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="hero-trust-section">
+                <div class="hero-trust-section" data-aos="fade-down" data-aos-delay="500">
                     <div class="hero-user-avatars">
                         <img src="./assets/review1.webp" alt="User 1">
                         <img src="./assets/review3.webp" alt="User 2">
@@ -82,7 +88,7 @@
             </div>
         </div>
     </div>
-    <section class="trust-section">
+    <section class="trust-section" data-aos="fade-up">
         <div class="container">
             <p class="trust-title">Trusted by 10,000+ innovative companies</p>
 
@@ -115,73 +121,81 @@
         </div>
     </section>
     <section class="sec-pad acheivements">
-        <div class="sec-head">
-            <h1>Our Achivement and Milestones</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, natus quaerat.</p>
+        <div class="sec-head dark-mode-text">
+            <h1>Our Achievements & Milestones</h1>
+            <p>Trusted by millions of individuals and businesses worldwide to secure their financial future.</p>
         </div>
+
         <div class="acheivements-container">
-            <div class="acheivements-card">
-                <h3>200k</h3>
+            <div class="acheivements-card" data-aos="fade-up-right" data-aos-delay="100">
+                <h3>2.5M+</h3>
                 <div class="acheive-content">
-                    <h4>Total Users</h4>
-                    <p>Path to Finance Success</p>
+                    <h4>Active Users</h4>
+                    <p>Trust us daily</p>
                 </div>
             </div>
-            <div class="acheivements-card">
-                <h3>200k</h3>
+
+            <div class="acheivements-card" data-aos="fade-up-right" data-aos-delay="200">
+                <h3>$80B</h3>
                 <div class="acheive-content">
-                    <h4>Total Users</h4>
-                    <p>Path to Finance Success</p>
+                    <h4>Transaction Volume</h4>
+                    <p>Processed annually</p>
                 </div>
             </div>
-            <div class="acheivements-card">
-                <h3>200k</h3>
+
+            <div class="acheivements-card" data-aos="fade-up-right" data-aos-delay="300">
+                <h3>99.9%</h3>
                 <div class="acheive-content">
-                    <h4>Total Users</h4>
-                    <p>Path to Finance Success</p>
+                    <h4>Uptime Guarantee</h4>
+                    <p>Always reliable</p>
                 </div>
             </div>
-            <div class="acheivements-card">
-                <h3>200k</h3>
+
+            <div class="acheivements-card" data-aos="fade-up-right" data-aos-delay="400">
+                <h3>120+</h3>
                 <div class="acheive-content">
-                    <h4>Total Users</h4>
-                    <p>Path to Finance Success</p>
+                    <h4>Countries Supported</h4>
+                    <p>Global reach</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="features">
         <div class="sec-head">
-            <h1>Banking Features to bring your Product Vision to life</h1>
-            <p>Each of our features has the depth required to archeive a fully customised user flow </p>
+            <h1>Banking features to bring your vision to life</h1>
+            <p>Experience a fully customized financial ecosystem designed for modern businesses.</p>
         </div>
         <div class="features-container">
-            <div class="features-card">
+            <div class="features-card" data-aos="fade-up-left" data-aos-delay="100">
                 <div class="features-icon">
-                    <span class="material-icons">credit_card</span>
+                    <span class="material-icons">account_balance</span>
                 </div>
-                <div class="features-head">Accounts</div>
-                <div class="features-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis,
-                    blanditiis!</div>
-                <a href="404page.html" class="features-btn">Explore Now</a>
+                <div class="features-head">Global Accounts</div>
+                <div class="features-para">Open multi-currency business accounts in 30+ countries with local IBANs
+                    instantly.</div>
+                <a href="404page.html" class="features-btn">Explore Accounts <span
+                        class="material-icons">arrow_forward</span></a>
             </div>
-            <div class="features-card">
+            <div class="features-card" data-aos="fade-up-left" data-aos-delay="200">
                 <div class="features-icon">
                     <span class="material-icons">credit_card</span>
                 </div>
-                <div class="features-head">Accounts</div>
-                <div class="features-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis,
-                    blanditiis!</div>
-                <a href="404page.html" class="features-btn">Explore Now</a>
+                <div class="features-head">Corporate Cards</div>
+                <div class="features-para">Issue unlimited virtual and physical cards for your team with built-in
+                    spending limits.</div>
+                <a href="404page.html" class="features-btn">Explore Cards <span
+                        class="material-icons">arrow_forward</span></a>
             </div>
-            <div class="features-card">
+            <div class="features-card" data-aos="fade-up-left" data-aos-delay="300">
                 <div class="features-icon">
-                    <span class="material-icons">credit_card</span>
+                    <span class="material-icons">payments</span>
                 </div>
-                <div class="features-head">Accounts</div>
-                <div class="features-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis,
-                    blanditiis!</div>
-                <a href="404page.html" class="features-btn">Explore Now</a>
+                <div class="features-head">Instant Payments</div>
+                <div class="features-para">Send and receive money globally via SWIFT, SEPA, and local payment rails in
+                    seconds.</div>
+                <a href="404page.html" class="features-btn">Explore Payments <span
+                        class="material-icons">arrow_forward</span></a>
             </div>
         </div>
     </section>
@@ -189,7 +203,7 @@
     <section class="about-sticky-wrapper">
         <div class="about-container">
 
-            <div class="about-visual">
+            <div class="about-visual" data-aos="fade-down">
                 <div class="sticky-image-box">
                     <img src="./assets/about-img.webp" alt="Banking Professionals" class="about-img">
                     <div class="experience-badge">
@@ -200,7 +214,7 @@
             </div>
 
             <div class="about-content">
-                <div class="content-block">
+                <div class="content-block" data-aos="fade-down-left" data-aos-delay="100">
                     <h4 class="sub-heading">Who We Are</h4>
                     <h2>Empowering Your Financial Future</h2>
                     <p>
@@ -210,7 +224,7 @@
                     </p>
                 </div>
 
-                <div class="content-block">
+                <div class="content-block" data-aos="fade-down-left" data-aos-delay="200">
                     <h4 class="sub-heading">Our Mission</h4>
                     <h2>Technology Meets Trust</h2>
                     <p>
@@ -220,7 +234,7 @@
                     </p>
                 </div>
 
-                <div class="content-block">
+                <div class="content-block" data-aos="fade-down-left" data-aos-delay="300">
                     <h4 class="sub-heading">Why Choose Us</h4>
                     <h2>Global Reach, Local Focus</h2>
                     <p>
@@ -243,7 +257,7 @@
                 <img src="./assets/app-features2.webp" alt="Feature 3" class="feature-img">
             </div>
 
-            <div class="app-features-content">
+            <div class="app-features-content" data-aos="fade-up">
 
                 <div class="app-features-card active" data-index="0">
                     <div class="icon-box">
@@ -279,7 +293,7 @@
     </section>
     <section class="empower">
         <div class="empower-container">
-            <div class="empower-img">
+            <div class="empower-img" data-aos="fade-down">
                 <img src="./assets/about-img.webp" alt="Empowering Img">
                 <div class="empower-img-overlay">
                     <div class="img-overlay">
@@ -304,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="empower-content">
+            <div class="empower-content" data-aos="fade-up">
                 <h1>Empower your Finance teams and money</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, est nisi.</p>
                 <div class="empower-card-container">
@@ -324,7 +338,7 @@
             </div>
         </div>
     </section>
-    <section class="cash-management">
+    <section class="cash-management" data-aos="zoom-in">
         <div class="cash-container">
             <div class="cash-head">
                 <h1>Cash management essential purpose-built for startups</h1>
@@ -393,7 +407,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial">
+    <section class="testimonial" data-aos="fade" data-aos-delay="200">
         <div class="testimonial-section">
             <div class="testimonial-container">
 
@@ -435,7 +449,7 @@
         </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" data-aos="fade-up">
         <div class="cta-container">
             <h1>Sign up in minutes. Join the movements</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore incidunt illum inventore? Vel,
@@ -448,10 +462,10 @@
     </section>
     <footer>
         <div class="footer-container">
-            <div class="footer-logo">
+            <div class="footer-logo" data-aos="fade-up" data-aos-delay="100">
                 <img src="./assets/Stackly-logo-Blue.webp" alt="Logo" class="logo">
             </div>
-            <div class="footer-content">
+            <div class="footer-content" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="footer-head">Quick Links</h3>
                 <a href="index.html">Home</a>
                 <a href="404page.html">About</a>
@@ -459,21 +473,21 @@
                 <a href="404page.html">Blog</a>
                 <a href="404page.html">Contact</a>
             </div>
-            <div class="footer-content">
+            <div class="footer-content" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="footer-head">Products</h3>
                 <a href="404page.html">Business Loans</a>
                 <a href="404page.html">Loan Calculator</a>
                 <a href="404page.html">Refer a friend</a>
                 <a href="404page.html">Partner Program</a>
             </div>
-            <div class="footer-content">
+            <div class="footer-content" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="footer-head">Help</h3>
                 <a href="404page.html">Customer Care</a>
                 <a href="404page.html">Executive Team</a>
                 <a href="404page.html">Security Center</a>
                 <a href="404page.html">Recognition</a>
             </div>
-            <div class="footer-content social-media">
+            <div class="footer-content social-media" data-aos="fade-up" data-aos-delay="500">
                 <h3 class="footer-head">Social Media</h3>
                 <a href="404page.html"><i class="fa-brands fa-instagram"></i></a>
                 <a href="404page.html"><i class="fa-brands fa-facebook"></i> </a>
@@ -481,10 +495,20 @@
                 <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div class="footer-copy">
-            <span>2026 All rights received</span>
+        <div class="footer-copy" data-aos="fade">
+            <div class="fo"><span class="material-icons">copyright</span>2026 All Rights Reserved</div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out',
+            once: true,
+            offset: 50,
+            // disable: 'mobile'
+        });
+    </script>
     <script>
 
         const header = document.getElementById('header');
@@ -591,18 +615,13 @@
             const intervalTime = 4000; // 4 seconds
             let interval;
 
-            // 3. Function to Update Content
             function updateTestimonial(index) {
-                // A. Remove active class from all avatars
                 avatars.forEach(avatar => avatar.classList.remove('active'));
 
-                // B. Add active class to current avatar
                 avatars[index].classList.add('active');
 
-                // C. Fade Out Content
                 reviewCard.classList.add('fade-out');
 
-                // D. Wait for fade out, then swap text and fade in
                 setTimeout(() => {
                     const data = reviews[index];
                     reviewText.textContent = `"${data.text}"`;
@@ -611,28 +630,47 @@
                     reviewerImg.src = data.img;
 
                     reviewCard.classList.remove('fade-out');
-                }, 400); // Matches the CSS transition time
+                }, 400);
             }
 
-            // 4. Function to handle Autoplay
             function nextTestimonial() {
                 currentIndex = (currentIndex + 1) % reviews.length;
                 updateTestimonial(currentIndex);
             }
 
-            // 5. Start Loop
             interval = setInterval(nextTestimonial, intervalTime);
 
-            // 6. Manual Click Handling
             avatars.forEach((avatar, index) => {
                 avatar.addEventListener('click', () => {
-                    clearInterval(interval); // Stop autoplay if user clicks
+                    clearInterval(interval);
                     currentIndex = index;
                     updateTestimonial(currentIndex);
-                    // Optional: Restart autoplay after 10 seconds of inactivity
                     interval = setInterval(nextTestimonial, 10000);
                 });
             });
+        });
+
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        function openMenu() {
+            navMenu.classList.add("active");
+            closeMenu.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeNav() {
+            navMenu.classList.remove("active");
+            closeMenu.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        hamburger.addEventListener("click", openMenu);
+        closeMenu.addEventListener("click", closeNav);
+
+        document.querySelectorAll(".nav-items a").forEach(link => {
+            link.addEventListener("click", closeNav);
         });
     </script>
 
