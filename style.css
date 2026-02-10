@@ -922,7 +922,7 @@ header,
 
     .app-features-content {
         z-index: 10;
-        background-color: rgba(255, 255, 255, 0.255);
+        background-color: rgba(255, 255, 255, 0.495);
         border-radius: 20px;
     }
 
@@ -939,26 +939,40 @@ header,
     }
 
     .features-image-container::after {
+        content: "";
+        position: absolute;
+        inset: 0;
         background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.6) 0%,
                 rgba(0, 0, 0, 0.9) 100%) !important;
-        opacity: 1;
+        z-index: 5;
+
+        pointer-events: none;
     }
 
     .text-box h2 {
+        color: var(--head-text);
         font-size: 20px;
         margin: 0 0 8px 0;
-        color: var(--dark);
     }
 
     .text-box p {
-        font-size: 15px;
         color: var(--primary-text);
+        font-size: 15px;
         font-weight: 500;
         margin: 0;
         line-height: 1.6;
     }
+
+    .app-features-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 15px;
+        color: white;
+    }
 }
+
 
 .empower {
     padding: 60px 120px;
